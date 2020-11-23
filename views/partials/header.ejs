@@ -5,5 +5,43 @@
       <meta charset="utf-8">
       <link href="css/styles.css" rel="stylesheet" type="text/css"/>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <script>
+$(".nav .nav-link").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).addClass("active");
+});
+</script>
   </head>
-<body>
+  <body class="bg-secondary">
+    
+  <!--Navbar -->
+  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark indigo">
+  <a class="navbar-brand" href="/">Our Solar System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/mercury">Mercury</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/venus">Venus</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/earth">Earth</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/neptune">Neptune</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+<!--/.Navbar -->
+
+
+<div class="container">
